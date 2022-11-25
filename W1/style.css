@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+
+
+
+/* Contents wrap */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 50px;
+}
+
+.content-wrap {
+    width: 28rem;
+    height: 40rem;
+    background-color: rgba(213, 238, 182, 0.601);
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.txt-box {
+    width: 240px;
+    height: 39px;
+    border-radius: 10px;
+    margin: 7px 0 11px 0;
+    border: 2px solid rgb(222, 224, 113);
+    background:rgba(222, 224, 113, 0.381);
+    
+}
+
+.txt-box:focus
+{
+  background-color: rgba(214, 214, 214, 0.263);
+}
+
+
+label {
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+}
+
+
+
+.gen-radio {
+    padding-right: 13px;
+}
+
+.fav {
+    display: flex;
+}
+
+
+
+.mar {
+    padding-top: 11px;
+}
+
+.drop-box {
+    height: 23px;
+    width: 60px;
+    text-align: center;
+    font-size: 15px;
+    /* padding: 13px 0; */
+}
+
+.birthday {
+    padding: 16px 0;
+}
+
+.submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 33px;
+    width: 95px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: rgba(213, 238, 182, 0.601);
+    color: red;
+    border: 1.8px solid red;
+}
+
+.date {
+    height: 23px;
+    width: 151px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.title {
+    margin-right: 10px;
+}

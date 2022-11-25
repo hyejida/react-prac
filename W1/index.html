@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>S.A과제 Week1</title>
+  </head>
+  <script>
+    // function submit(form) {
+    //     if(!valid) {
+    //         alert('빈칸을 채워주세요!')
+    //         return false;
+    //     }
+    //     return confirm('제출완료!! :)')
+    // }
+
+    function conf() {
+        alert('제출완료');
+    }
+    
+</script>
+  <body>
+    
+    <div class="content-wrap">
+        <h1>S.A 과제 WEEK01</h1>
+        <form action class="form" onsubmit="return submit();">
+            <label for="First Name">First Name:</label>
+            <input class="txt-box" type="text" required />
+            <label for="Last Name">Last Name:</label>
+            <input class="txt-box" type="text" required />
+            <label for="Email">Email:</label>
+            <input class="txt-box" type="email" required />
+            <div class="gender mar">
+                <label for="gender" class="title">Gender:</label>
+                <label class="gen-radio"><input type="radio" name="gender" value="male" /> Male</label>
+                <label><input type="radio" name="gender" value="Female" /> Female</label>
+            <div>
+            <div class="fav mar">
+                <label for="gender" class="title">Favorite:</label>
+                <label><input type="checkbox" name="lg" value="html" />HTML</label>
+                <label><input type="checkbox" name="lg" value="JAVA" />JAVA</label>
+                <label
+                    ><input type="checkbox" name="lg" value="JavaScript" />JavaScript</label
+                >
+            </div>
+            <div class="browser mar">
+                <label for="Browser" class="title">Broswer:</label>
+                <select name="browser" class="drop-box">
+                    <option value="크롬">크롬</option>
+                    <option value="사파리">사파리</option>
+                    <option value="엣지">엣지</option>
+                </select>
+            </div>
+            <div class="birthday">
+                <label for="birthday" class="title">Birthday:</label>
+                <input class="date" type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}" />
+            </div>
+            <input onClick="conf()" class="submit" type="submit">
+        </form>
+    </div>
+  </body>
+</html>
